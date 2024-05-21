@@ -20,7 +20,7 @@ This project extracts specific information from invoices in PDF format using a l
 
 1. **Clone the repository**
     ```bash
-    git clone https://github.com/yourusername/InvoiceExtractionWithLLM.git
+    git clone (https://github.com/yuvanrajjjj/InvoiceExtractionOCR.git)
     cd InvoiceExtractionWithLLM
     ```
 
