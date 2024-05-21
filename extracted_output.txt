@@ -1,1 +1,6 @@
-[{'invoice no': 1234, 'Total': 1000.0, 'Address': '123 Main St', 'Account No': 12345}]
+{
+"invoice no": 12345,
+"Total": 67890,
+"Address": "123 Main St, Anytown, USA",
+"Account No": 987654321
+}
