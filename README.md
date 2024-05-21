@@ -1,6 +1,10 @@
-# Invoice Extraction with LLM
+## Invoice Extraction with LLM
 
-This project extracts specific information from invoices in PDF format using a language model (LLM). The extracted information includes the invoice number, total amount, address, and account number.
+This project extracts specific information from invoices in PDF format using a language model (LLM). The extracted information includes the invoice number, total amount, address, and account number and also you can add or customize the Extraction Schema for desired output
+
+## Flexibility with LLMs
+
+This project is designed to be flexible and can work with various open and other LLMs. The current implementation uses OllamaFunctions with the llama2 model, but you can easily switch to other models by updating the LLM initialization in the script.
 
 ## Project Structure
 
@@ -20,7 +24,7 @@ This project extracts specific information from invoices in PDF format using a l
 
 1. **Clone the repository**
     ```bash
-    git clone (https://github.com/yuvanrajjjj/InvoiceExtractionOCR.git)
+    git clone https://github.com/yuvanrajjjj/InvoiceExtractionWithLLM.git
     cd InvoiceExtractionWithLLM
     ```
 
@@ -42,11 +46,24 @@ This project extracts specific information from invoices in PDF format using a l
 
 2. **Run the extraction script**
     ```bash
-    python extracted_output.txt
+    python Extraction.py
     ```
 
 3. **Check the extracted output**
     The extracted information will be saved in `extracted_output.txt` in the project directory.
+
+## Extraction Schema
+
+The schema for data extraction is predefined to include the following properties:
+
+schema = {
+    "properties": {
+        "invoice no": {"type": "integer"},
+        "Total": {"type": "integer"},
+        "Address": {"type": "string"},
+        "Account No": {"type": "integer"},
+    }
+}
 
 ## Example Output
 {
