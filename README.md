@@ -66,9 +66,4 @@ schema = {
 }
 
 ## Example Output
-{
-"invoice no": 12345,
-"Total": 67890,
-"Address": "123 Main St, Anytown, USA",
-"Account No": 987654321
-}
+[{'invoice no': 12345, 'Total': 500.0, 'Address': '63 ivy road,Hawkville,GA,USA 31036', 'Account No':123-456-7890}]
